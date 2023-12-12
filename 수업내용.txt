@@ -1,0 +1,46 @@
+index(색인)
+index.html 문서명은 웹서버에서 처음으로 인식하는 파일명으로서 메인페이지의 파일명으로 많이 사용된다.
+웹서버에서 첫문서명이기 때문에 생략해도 자동으로 index.html 문서가 열린다.
+
+> index.html, index.php, login.html, story.html
+-------------------------------------------------
+ex)
+
+각 홈페이지의 메인페이지는 index로 시작한다. 표기생략 가능
+
+http://www.naver.com/index.html (네이버 메인)
+
+http://www.daum.net/index.html (다음 메인)
+
+http://www.google.com/index.html (구글 메인)
+
+
+-----------------
+html
+login.html(메인 서식)
+섹션 / class=login
+	h2로그인
+	legend 로그인
+		label for=id_txt 아이디 >input id=id_txt / placeholder=아이디를입력하세요
+		label for=pw_txt 패스워드 > input id=pw_txt / placeholder=패스워드를 입력하세요
+		input = button /class=login_btn
+		....
+	legend
+
+
+	
+sub.css(서브서식)
+--------------------------------
+php(백엔드 언어)
+header.php
+footer.php
+
+php 문법
+include()함수 : 지정된 파일의 모든 텍스트를 가져와서 인클루드 함수를 사용하여 파일을 삽입함.
+<?php include('./파일경로명/파일명.확장자명')?>
+
+- 기능/역할 분담을 해야할 때
+- 웹페이지 상단/헤더를 분리해야 할때(재사용이 필요한 요소들)
+- 업데이트를 자주하는 페이지 영역(관리하기 용이)
+
+> 깃허브는 완전한서버가아니라적용안되지만(백엔드언어지원x) / 닷홈은 적용이된다
